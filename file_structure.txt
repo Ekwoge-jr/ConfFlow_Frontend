@@ -1,0 +1,108 @@
+confflow/
+├─ app/
+│  ├─ (auth)/                  # future auth screens if needed
+│  │  ├─ login/
+│  │  └─ signup/
+│  │
+│  ├─ dashboard/
+│  │  ├─ page.tsx              # main operations dashboard
+│  │  ├─ loading.tsx
+│  │  └─ error.tsx
+│  │
+│  ├─ conferences/
+│  │  ├─ page.tsx              # event list / conference management
+│  │  ├─ new/page.tsx
+│  │  └─ [id]/page.tsx
+│  │
+│  ├─ participants/
+│  │  ├─ page.tsx              # participant directory
+│  │  ├─ [id]/page.tsx        # participant profile
+│  │  └─ import/page.tsx
+│  │
+│  ├─ programs/
+│  │  ├─ page.tsx              # tracks, rooms, sessions
+│  │  └─ [id]/page.tsx
+│  │
+│  ├─ checkin/
+│  │  └─ page.tsx              # scanner / attendance desk
+│  │
+│  ├─ reports/
+│  │  └─ page.tsx              # export and analytics
+│  │
+│  ├─ communications/
+│  │  ├─ page.tsx              # email campaign overview
+│  │  └─ templates/page.tsx
+│  │
+│  ├─ layout.tsx
+│  ├─ page.tsx
+│  ├─ globals.css
+│  └─ favicon.ico
+│
+├─ components/
+│  ├─ layout/
+│  │  ├─ Sidebar.tsx
+│  │  ├─ Topbar.tsx
+│  │  └─ AppShell.tsx
+│  │
+│  ├─ dashboard/
+│  │  ├─ StatCard.tsx
+│  │  ├─ FunnelChart.tsx
+│  │  ├─ AttendanceChart.tsx
+│  │  └─ OverviewPanel.tsx
+│  │
+│  ├─ participants/
+│  │  ├─ ParticipantTable.tsx
+│  │  ├─ ParticipantFilters.tsx
+│  │  └─ StatusPill.tsx
+│  │
+│  ├─ programs/
+│  │  ├─ SessionCard.tsx
+│  │  ├─ CapacityBar.tsx
+│  │  └─ RoomSchedule.tsx
+│  │
+│  ├─ checkin/
+│  │  ├─ QRScannerPanel.tsx
+│  │  └─ CheckinFeed.tsx
+│  │
+│  └─ shared/
+│     ├─ Button.tsx
+│     ├─ Card.tsx
+│     ├─ Badge.tsx
+│     └─ EmptyState.tsx
+│
+├─ lib/
+│  ├─ utils.ts
+│  ├─ format.ts
+│  ├─ constants.ts
+│  └─ mock-data.ts
+│
+├─ types/
+│  ├─ conference.ts
+│  ├─ participant.ts
+│  ├─ attendance.ts
+│  ├─ report.ts
+│  └─ index.ts
+│
+├─ data/
+│  ├─ conferences.ts
+│  ├─ participants.ts
+│  ├─ sessions.ts
+│  └─ campaigns.ts
+│
+├─ hooks/
+│  ├─ useParticipants.ts
+│  ├─ useDashboardMetrics.ts
+│  └─ useAttendance.ts
+│
+├─ styles/
+│  └─ tokens.css
+│
+├─ public/
+│  ├─ logos/
+│  └─ icons/
+│
+├─ package.json
+├─ tsconfig.json
+├─ next.config.ts
+├─ eslint.config.mjs
+└─ README.md
